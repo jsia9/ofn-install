@@ -1,6 +1,6 @@
 ---
 
-domain: ofn.ikatrans.com
+domain: staging.mahofood.com
 host_id: bf-staging
 rails_env: staging
 
@@ -9,4 +9,4 @@ admin_email: contact@ikatrans.com
 mail_domain: ikatrans.com
 
 certbot_domains:
-  - ofn.ikatrans.com
+  - staging.mahofood.com
