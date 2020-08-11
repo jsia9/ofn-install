@@ -5,17 +5,17 @@ checkout_zone: Africa
 country_code: BF
 currency: XOF
 locale: fr_BF
-available_locales: fr,en_FR
+available_locales: fr_BF,en_FR
 language: en_US.UTF-8
 language_packages:
   - language-pack-en-base
   - language-pack-fr-base
 l10n_repo: https://github.com/jamalsia/l10n_bf.git
-timezone: Abidjan
+timezone: Monrovia
 
 # Used for the LetsEncrypt email setting
 developer_email: contact@ikatrans.com
 
 # Users listed here will have their key from /files/keys added to the unicorn_user
 users_sysadmin:
-  - "{{ core_devs }}"
+  - "{{ ika_devs }}"

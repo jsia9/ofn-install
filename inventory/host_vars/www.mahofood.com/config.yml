@@ -1,12 +1,12 @@
 ---
 
-domain: ofn.ikatrans.com
-host_id: bf-staging
-rails_env: staging
+domain: www.mahofood.com
+host_id: bf-prod
+rails_env: production
 
 admin_email: contact@ikatrans.com
 
 mail_domain: ikatrans.com
 
 certbot_domains:
-  - ofn.ikatrans.com
+  - www.mahofood.com

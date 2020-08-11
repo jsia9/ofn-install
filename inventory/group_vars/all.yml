@@ -187,6 +187,12 @@ unicorn_env_vars: |
 memcached_value_max_megabytes: 4
 
 #----------------------------------------------------------------------
+# Ikatrans devs: users named here will have SSH access ofn.ikatrans.com
+
+ika_devs:
+  - sia
+
+#----------------------------------------------------------------------
 # Core devs: users named here will have SSH access on all instances
 
 core_devs:
