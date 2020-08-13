@@ -13,3 +13,4 @@ certbot_domains:
 
 users_sysadmin:
   - "{{ ika_devs }}"
+  - "{{ core_devs }}"
