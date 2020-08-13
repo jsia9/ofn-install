@@ -4,7 +4,7 @@
 checkout_zone: Africa
 country_code: BF
 currency: XOF
-locale: fr-BF
+locale: bf
 available_locales: fr-BF,en_FR
 language: fr_BF.UTF-8
 language_packages:

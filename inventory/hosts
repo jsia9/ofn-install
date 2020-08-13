@@ -149,7 +149,7 @@ staging.mahofood.com ansible_host=51.103.25.171
 [bf-prod]
 www.mahofood.com ansible_host=40.89.174.65
 
-[bf:children]
+[fr-BF:children]
 bf-staging
 bf-prod
 #------------------------------------------------------------------------------
