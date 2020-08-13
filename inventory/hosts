@@ -145,9 +145,9 @@ za-prod
 # Burkina
 
 [bf-staging]
-staging.mahofood.com ansible_host=51.103.25.171
+staging.mahofood.com ansible_host=mahostaging.francecentral.cloudapp.azure.com
 [bf-prod]
-www.mahofood.com ansible_host=40.89.174.65
+www.mahofood.com ansible_host=mahoprod.francecentral.cloudapp.azure.com
 
 [bf:children]
 bf-staging
