@@ -5,7 +5,6 @@ host_id: bf-staging
 rails_env: staging
 
 admin_email: contact@ikatrans.com
-developer_email: contact@ikatrans.com
 
 mail_domain: ikatrans.com
 
