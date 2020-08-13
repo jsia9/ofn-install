@@ -2,7 +2,7 @@
 
 - name: fetch ofn-secrets
   git:
-    repo: "git@github.com:openfoodfoundation/ofn-secrets"
+    repo: "git@github.com:jamalsia/ofn-secrets"
     dest: "/tmp/ofn-secrets"
     version: master
     depth: 1

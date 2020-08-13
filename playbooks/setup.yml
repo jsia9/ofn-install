@@ -8,7 +8,7 @@
 # Ensure python is set up and accessible on the server before starting (ansible requires python2.7)
 - name: python check
   hosts: ofn_servers
-  gather_facts: no
+  gather_facts: true
   remote_user: jamal
   tasks:
     - name: Install python 2.7

@@ -5,8 +5,11 @@ host_id: bf-prod
 rails_env: production
 
 admin_email: contact@ikatrans.com
-
+developer_email: contact@ikatrans.com
 mail_domain: ikatrans.com
 
 certbot_domains:
   - www.mahofood.com
+
+users_sysadmin:
+  - "{{ ika_devs }}"
