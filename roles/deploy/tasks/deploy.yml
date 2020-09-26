@@ -65,7 +65,17 @@
   tags:
     - bundle_app
     - skip_ansible_lint
-  notify: reload unicorn
+  notify: restart unicorn
+
+# Install JS dependencies with yarn
+
+- name: run yarn install
+  yarn:
+    path: "{{ build_path }}"
+    executable: "{{ npm_prefix }}/bin/yarn"
+    production: yes
+  become: true
+  become_user: "{{ unicorn_user }}"
 
 # Update the database
 
@@ -92,7 +102,7 @@
   tags:
     - rake
     - skip_ansible_lint
-  notify: reload unicorn
+  notify: restart unicorn
 
 - name: seed database
   command: bash -lc "bundle exec rake db:seed RAILS_ENV={{ rails_env }}"
@@ -101,7 +111,7 @@
   tags:
     - seed
     - skip_ansible_lint
-  notify: reload unicorn
+  notify: restart unicorn
 
 # Precompile assets
 
@@ -127,6 +137,6 @@
     force: yes
   become: yes
   notify:
-    - reload unicorn
+    - restart unicorn
     - restart delayed_job
     - update whenever
