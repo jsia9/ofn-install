@@ -50,6 +50,18 @@ $ pyenv install 3.8.2
 ```
 $ pyenv virtualenv 3.8.2 ofn-install
 ```
+## Installation quick steps
+
+```
+ansible-galaxy install -r bin/requirements.yml
+ansible-playbook site.yml  --limit=bf-staging  -e "ansible_user=jamal"
+
+ansible-playbook playbooks/deploy.yml --limit bf-staging -e "git_version=v2.9.10"
+
+
+ansible-playbook playbooks/deploy.yml --limit bf-prod -e "git_version=v2.9.10"
+
+```
 
 ## Code quality
 
