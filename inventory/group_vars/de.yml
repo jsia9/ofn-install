@@ -17,3 +17,8 @@ developer_email: admin@openfoodfoundation.org
 # Users listed here will have their key from /files/keys added to the unicorn_user
 users_sysadmin:
   - "{{ core_devs }}"
+  - "hendirk"
+
+maintenance_mode_message: >
+  Wir führen gerade Wartungsarbeiten durch und sind gleich wieder da.
+  Bitte versuchen Sie es in einigen Minuten erneut.
