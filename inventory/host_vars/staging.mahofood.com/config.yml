@@ -2,7 +2,7 @@
 
 domain: staging.mahofood.com
 host_id: bf-staging
-rails_env: staging
+rails_env: test
 
 admin_email: contact@ikatrans.com
 
