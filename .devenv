@@ -13,7 +13,7 @@ NAME="ofn"
 DISTRIBUTION="ubuntu"
 RELEASE="xenial"
 ARCH="amd64"
-HOST="ofn.local"
+HOST="staging.mahofood.com"
 
 DEVENV_USER="openfoodnetwork"
 DEVENV_GROUP="openfoodnetwork"
@@ -23,4 +23,3 @@ PROJECT_PATH="${PWD%/*}/$PROJECT_NAME"
 
 # Select the python interpeter python2.7 or python3
 PYTHON_INTERPRETER=python3
-
